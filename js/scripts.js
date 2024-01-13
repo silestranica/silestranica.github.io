@@ -123,6 +123,21 @@ var TxtRotate = function(el, toRotate, period) {
     document.body.appendChild(css);
   };
 
+export function action() {
+  return json({ hardReloadUrl: 'https://www.redstripes.online' });
+}
+
+export default function Component() {
+  let actionData = useActionData();
+
+  React.useEffect(() => {
+    if (actionData?.hardReloadUrl && typeof window !== 'undefined') {
+      window.location.replace(actionData.hardReloadUrl);
+    }
+  }, [actionData]);
+
+  return <Form method="post>...</Form>
+}
 
 
     

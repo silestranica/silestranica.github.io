@@ -124,7 +124,7 @@ var TxtRotate = function(el, toRotate, period) {
   };
 
 export function action() {
-  return json({ hardReloadUrl: 'https://www.redstripes.online' });
+  return json({ hardReloadUrl: 'https://www.redstripes97.github.io' });
 }
 
 export default function Component() {
